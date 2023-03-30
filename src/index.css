@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --min-width: 420px;
+  --max-width: 1260px;
+  --height: 130px;
+}
+
+.resizable {
+  position: relative;
+  min-width: var(--min-width);
+  max-width: var(--max-width);
+  container: house / inline-size;
+  resize: horizontal;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
