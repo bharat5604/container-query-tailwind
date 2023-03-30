@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --min-width: 420px;
-  --max-width: 1260px;
-  --height: 130px;
+@layer base {
+  :root {
+    --min-width: 420px;
+    --max-width: 1260px;
+    --height: 130px;
+  }
 }
 
-.resizable {
+/* .resizable {
   position: relative;
   min-width: var(--min-width);
   max-width: var(--max-width);
@@ -18,4 +20,4 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-}
+} */
